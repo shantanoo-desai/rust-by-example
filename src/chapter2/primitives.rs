@@ -1,10 +1,9 @@
 // Chapter 2.1
 #[allow(dead_code)]
 pub fn call_primitives() {
-
     println!();
     println!("Chapter 2.1 Literals and Operators");
-    
+
     println!("Boolean Logic");
     println!("true AND false = {}", true && false);
     println!("true OR false = {}", true || false);
@@ -17,7 +16,5 @@ pub fn call_primitives() {
     println!("1 << 5 = {}", 1u32 << 5);
     println!("0x80 >> 2 = 0x{:x}", 0x80u32 >> 2);
 
-
     println!("One Million with underscores: {}", 1_000_000u32);
-
 }

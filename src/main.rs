@@ -2,6 +2,8 @@ mod chapter1;
 
 mod chapter2;
 
+mod chapter3;
+
 fn main() {
     // //  Chapter 1
     // chapter1::hello::call_hello();
@@ -21,10 +23,13 @@ fn main() {
     // //  Chapter 1.2.3
     // chapter1::formatted_formatting::call_formatted_formatting();
 
-    //   Chapter 2.1
-    chapter2::primitives::call_primitives();
+    // //   Chapter 2.1
+    // chapter2::primitives::call_primitives();
 
-    chapter2::tuples::call_tuples();
+    // chapter2::tuples::call_tuples();
 
-    chapter2::arrays_slices::call_array_slices();
+    // chapter2::arrays_slices::call_array_slices();
+
+    //   Chapter 3.1
+    chapter3::structures::call_structures();
 }

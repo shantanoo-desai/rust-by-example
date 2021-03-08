@@ -23,7 +23,6 @@ struct Point2D {
 
 impl fmt::Display for Point2D {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
-        
         write!(f, "(x,y): ({}, {})", self.x, self.y)
     }
 }
@@ -35,14 +34,13 @@ struct Complex2D {
 }
 
 impl fmt::Display for Complex2D {
-    fn fmt (&self, f: &mut fmt::Formatter) -> fmt::Result {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(f, "{} + {}i", self.real, self.imag)
     }
 }
 
 #[allow(dead_code)]
 pub fn call_formatted_display() {
-
     println!();
     println!("Chapter 1.2.2 Display");
 
@@ -52,10 +50,13 @@ pub fn call_formatted_display() {
     println!("Debug: first_range {:?}", first_range);
     println!("Display: first_range: {}", first_range);
 
-    let origin = Point2D {x: 0, y: 0};
+    let origin = Point2D { x: 0, y: 0 };
     println!("Origin of 2D cartesian system is: {}", origin);
 
-    let complex_point = Complex2D{real: 2.34, imag: -3.34};
+    let complex_point = Complex2D {
+        real: 2.34,
+        imag: -3.34,
+    };
 
     println!("Complex Point: {}", complex_point);
 }

@@ -9,7 +9,7 @@ impl fmt::Display for List {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         // extract the vector
         let vec = &self.0;
-        
+
         write!(f, "[")?; // `?` will handle all varying results
 
         // iterate over the vector
@@ -24,7 +24,6 @@ impl fmt::Display for List {
     }
 }
 
-
 //////////////////////////////////////////////////////////////////////
 
 struct List2(Vec<i32>);
@@ -36,14 +35,12 @@ impl fmt::Display for List2 {
         write!(f, "[")?;
 
         for (count, v) in vec.iter().enumerate() {
-            
             if count != 0 {
                 write!(f, ", ")?;
             }
             write!(f, "{}: {}", count, v)?;
         }
         write!(f, "]")
-
     }
 }
 
@@ -57,5 +54,4 @@ pub fn call_formatted_display_list() {
     let v2 = List2(vec![20, 40, 60]);
 
     println!("Updated List: {}", v2);
-
 }

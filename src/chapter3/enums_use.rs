@@ -16,19 +16,19 @@ pub fn call_enums_use() {
 
     // Use something like this
     // use crate::Status::{Poor, Rich};
+    use Status::{Poor, Rich};
+    use crate::chapter3::enums_use::Work::*;
 
-    // use crate::Work::*;
-
-    let status = Status::Poor;
-    let work = Work::Civilian;
+    let status = Poor;
+    let work = Civilian;
 
     match status {
-        Status::Rich => println!("the rich have lots of money!"),
-        Status::Poor => println!("the poor have no money.."),
+        Rich => println!("the rich have lots of money!"),
+        Poor => println!("the poor have no money.."),
     }
 
     match work {
-        Work::Civilian => println!("Civilians work!"),
-        Work::Soldier => println!("Soldiers fight!"),
+        Civilian => println!("Civilians work!"),
+        Soldier => println!("Soldiers fight!"),
     }
 }

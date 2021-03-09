@@ -1,8 +1,7 @@
 mod chapter1;
-
 mod chapter2;
-
 mod chapter3;
+mod chapter4;
 
 fn main() {
     // //  Chapter 1
@@ -30,11 +29,14 @@ fn main() {
 
     // chapter2::arrays_slices::call_array_slices();
 
-    //   Chapter 3.1
-    chapter3::structures::call_structures();
+    // //   Chapter 3.1
+    // chapter3::structures::call_structures();
 
-    //   Chapter 3.2
-    chapter3::enums::call_enums_1();
-    chapter3::enums_use::call_enums_use();
-    chapter3::enums_clike::call_enums_clike();
+    // //   Chapter 3.2
+    // chapter3::enums::call_enums_1();
+    // chapter3::enums_use::call_enums_use();
+    // chapter3::enums_clike::call_enums_clike();
+
+    //    Chapter 4
+    chapter4::variables::call_variables();
 }

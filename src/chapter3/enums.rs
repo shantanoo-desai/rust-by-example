@@ -1,5 +1,5 @@
 // Chapter 3.2 Enums
-
+#[allow(dead_code)]
 enum WebEvent {
     PageLoad,
     PageUnload,
@@ -22,7 +22,7 @@ fn inspect(event: WebEvent) {
     }
 }
 
-
+#[allow(dead_code)]
 pub fn call_enums_1() {
 
     println!();

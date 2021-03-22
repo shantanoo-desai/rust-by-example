@@ -3,6 +3,7 @@ mod chapter2;
 mod chapter3;
 mod chapter4;
 mod chapter5;
+mod chapter6;
 
 fn main() {
     // //  Chapter 1
@@ -42,8 +43,13 @@ fn main() {
     // chapter4::variables::call_variables();
 
     //    Chapter 5
-    chapter5::casting::call_types_casting();
-    chapter5::literals::call_types_literals();
-    chapter5::inference::call_type_inference();
-    chapter5::aliasing::call_type_aliasing();
+    // chapter5::casting::call_types_casting();
+    // chapter5::literals::call_types_literals();
+    // chapter5::inference::call_type_inference();
+    // chapter5::aliasing::call_type_aliasing();
+
+    //    Chapter 6
+    chapter6::frominto::call_conversion_frominto();
+    chapter6::tryfrominto::call_conversion_tryfrominto();
+    chapter6::stringfromto::call_conversion_stringfromto();
 }

@@ -1,3 +1,6 @@
+// Chapter 4: Variables
+
+#[allow(dead_code)]
 pub fn call_variables() {
     println!();
     println!("Chapter 4. Variables");

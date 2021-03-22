@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 type NanoSecond = u64;
 type Inch = u64;
 

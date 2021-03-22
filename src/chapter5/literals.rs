@@ -1,4 +1,4 @@
-
+#![allow(dead_code)]
 pub fn call_types_literals() {
     println!();
     println!("Literals");

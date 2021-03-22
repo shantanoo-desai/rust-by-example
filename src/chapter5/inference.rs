@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 pub fn call_type_inference() {
     println!();
     println!("Inference");

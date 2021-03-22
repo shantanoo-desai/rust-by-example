@@ -2,6 +2,7 @@ mod chapter1;
 mod chapter2;
 mod chapter3;
 mod chapter4;
+mod chapter5;
 
 fn main() {
     // //  Chapter 1
@@ -38,5 +39,11 @@ fn main() {
     // chapter3::enums_clike::call_enums_clike();
 
     //    Chapter 4
-    chapter4::variables::call_variables();
+    // chapter4::variables::call_variables();
+
+    //    Chapter 5
+    chapter5::casting::call_types_casting();
+    chapter5::literals::call_types_literals();
+    chapter5::inference::call_type_inference();
+    chapter5::aliasing::call_type_aliasing();
 }
